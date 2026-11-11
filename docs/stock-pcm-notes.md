@@ -37,6 +37,12 @@ the module's node address in decimal, so each code also gives an address.
 - These five modules send something the PCM listens for. Expect sources
   `1A`, `29`, `40`, `60` and `98` in the capture, plus `10` for the PCM.
 
+Truck-specific note: the transfer case control module (`1A`) was removed when
+the NV120 AWD transfer case went in. The only visible effect was the "Service
+4WD" lamp (its LED has been removed). So `1A` will not appear in captures, and
+the PCM should be holding a stored U1026. Reading the PCM's codes with a scan
+tool is a quick check of the address-from-code rule above.
+
 Also enabled: U1300 (Class 2 short to ground) and U1301 (Class 2 short to
 battery). U1000 (Class 2 communication malfunction) is not enabled.
 
