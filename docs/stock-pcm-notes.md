@@ -1,7 +1,10 @@
 # Stock PCM notes
 
 Read from the truck's stock calibration in HP Tuners VCM Editor (November 2026).
-Values were transcribed from screenshots. Anything marked *inferred* is a
+Values were transcribed from screenshots. A compare against the owner's
+modified tune showed no differences in DTC settings or speedometer values, and
+only one torque-management change (ETC TPS Max Delta Positive, set to 100 %),
+so everything below is the factory calibration. Anything marked *inferred* is a
 reading of the data, not something the editor states.
 
 ## Module
@@ -63,8 +66,9 @@ battery). U1000 (Class 2 communication malfunction) is not enabled.
   reports over Class 2, which suggests a speed-related PCM broadcast to look
   for in the capture.
 - Unexplained: 4,244.8 trans revolutions per mile is well above what a 3.73
-  axle and a normal tire size give (roughly 2,500). Do not build on this
-  figure until it is understood.
+  axle and a normal tire size give (roughly 2,500). It is the factory value,
+  not a later rescale, so the field must count something other than
+  driveshaft turns. Do not build on this figure until it is understood.
 
 ## Security
 
