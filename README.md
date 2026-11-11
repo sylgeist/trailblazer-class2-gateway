@@ -37,7 +37,8 @@ vehicle is switched off in `firmware/gateway/config.h`.
 firmware/gateway/   Arduino sketch (gateway.ino) and its modules
 test/test_native/   Host-side unit tests for the hardware-independent logic
 tools/              Python: capture the bus through an OBD adapter, decode and summarize
-docs/               Protocol notes, pins and timers, capture procedure, message table
+docs/               Protocol notes, pins and timers, capture procedure, message table,
+                    stock PCM notes
 captures/           Bus logs from the truck
 ```
 

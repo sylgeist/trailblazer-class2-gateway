@@ -21,6 +21,13 @@ byte (for example "byte 4 rises with coolant temperature in `crank-and-idle.csv`
 
 ## Leads to confirm (not verified)
 
+- Module addresses expected on the bus, from the stock PCM's enabled U-codes:
+  transfer case control `1A`, EBCM `29`, dash integration module `40`,
+  instrument cluster `60`, HVAC `98`. See `stock-pcm-notes.md`.
+- The PCM calibration has a separate "VSS pulses per mile (Bus)" value, which
+  suggests the PCM broadcasts speed or distance on Class 2.
+- A theft-deterrent (VATS) password exchange with the PCM at key-on.
+
 - HVAC: AC high-side pressure is reported as functional ID pair `C2`/`C3`,
   secondary ID `11`, value in kPa, from the PCM to the HVAC module. From
   community notes, not from this truck.
