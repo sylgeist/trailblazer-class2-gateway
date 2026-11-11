@@ -20,7 +20,7 @@ HVAC module and other factory modules keep seeing the messages they expect.
 |---|---|
 | Bus capture + decode tools (`tools/`) | Written and unit-tested. Not yet run against a real adapter |
 | Frame encode/decode, CRC, scheduler, MaxxECU CAN decode | Written and unit-tested on the host |
-| MCP2515 receive, torque PWM, speed output, main sketch | Written. **Not yet compiled for AVR or run on the board** |
+| MCP2515 receive, torque PWM, speed output, main sketch | Written; built for the Mega in CI. **Not yet run on the board** |
 | Class 2 physical layer (VPW) | Not written. Interface hardware choice is still open |
 | Message table | Empty. Filled only from a capture of the stock truck |
 
